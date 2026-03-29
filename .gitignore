@@ -1,0 +1,10 @@
+# Ignore personal CV data file
+cv.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.code-workspace

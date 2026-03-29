@@ -1,0 +1,32 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="shieldFill" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark background circle -->
+  <rect width="64" height="64" rx="14" fill="#0a0a0f"/>
+
+  <!-- Shield filled -->
+  <path d="M32 5L8 15v18c0 14 10.5 23.5 24 27 13.5-3.5 24-13 24-27V15L32 5z" fill="url(#shieldFill)"/>
+
+  <!-- Shield border -->
+  <path d="M32 5L8 15v18c0 14 10.5 23.5 24 27 13.5-3.5 24-13 24-27V15L32 5z" fill="none" stroke="url(#bg)" stroke-width="2"/>
+
+  <!-- SSB text -->
+  <text
+    x="32" y="39"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-weight="900"
+    font-size="15"
+    fill="url(#bg)"
+    letter-spacing="-0.5"
+  >SSB</text>
+</svg>
