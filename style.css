@@ -662,6 +662,8 @@ ul { list-style: none; }
 }
 @media (max-width: 640px) {
   .grid-lines { display: none; }
+  .hero { padding: 88px 20px 40px; }
+  .section { padding: 48px 20px; }
   .nav-links {
     position: fixed;
     top: 60px; left: 0; right: 0;
