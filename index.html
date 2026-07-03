@@ -3,97 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Safruddin Setia Budi – Senior QA Engineer</title>
-  <meta name="description" content="Professional web profile of Safruddin Setia Budi, Senior Quality Assurance Engineer with 4+ years of experience in enterprise-level web and mobile application testing." />
+  <title>Safruddin Setia Budi — Senior QA Engineer</title>
+  <meta name="description" content="Safruddin Setia Budi — Senior Quality Assurance Engineer with 5+ years of experience in enterprise-level web and mobile application testing, manual and automation (Playwright/TypeScript), API, performance, and database testing." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="shortcut icon" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Animated background particles -->
-  <div class="bg-particles" id="bgParticles"></div>
+  <!-- Grid overlay -->
+  <div class="grid-lines" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SSB Logo">
-          <defs>
-            <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#7c3aed"/>
-              <stop offset="100%" stop-color="#06b6d4"/>
-            </linearGradient>
-          </defs>
-          <!-- Shield shape -->
-          <path d="M18 2L4 8v10c0 8 6.4 13.6 14 16 7.6-2.4 14-8 14-16V8L18 2z" fill="url(#logoGrad)" opacity="0.15"/>
-          <path d="M18 2L4 8v10c0 8 6.4 13.6 14 16 7.6-2.4 14-8 14-16V8L18 2z" fill="none" stroke="url(#logoGrad)" stroke-width="1.5"/>
-          <!-- SSB text -->
-          <text x="18" y="22" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="9" fill="url(#logoGrad)" letter-spacing="-0.5">SSB</text>
-        </svg>
-        <span class="nav-logo-text">Safruddin<span class="dot">.</span></span>
+        <span class="nav-prompt">Safruddin@QA</span><span class="nav-sep">:</span><span class="nav-path">~</span><span class="nav-dollar">$</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        <li><a href="#about" class="nav-link"><span data-i18n="nav.about">About</span></a></li>
+        <li><a href="#approach" class="nav-link"><span data-i18n="nav.approach">Approach</span></a></li>
+        <li><a href="#skills" class="nav-link"><span data-i18n="nav.skills">Skills</span></a></li>
+        <li><a href="#experience" class="nav-link"><span data-i18n="nav.work">Work</span></a></li>
+        <li><a href="#certifications" class="nav-link"><span data-i18n="nav.certs">Certs</span></a></li>
+        <li><a href="#contact" class="nav-link"><span data-i18n="nav.contact">Contact</span></a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-tools">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-opt" data-lang="en">EN</span><span class="lang-slash">/</span><span class="lang-opt" data-lang="id">ID</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-content">
+    <div class="hero-inner">
       <div class="hero-badge reveal">
         <span class="badge-dot"></span>
-        Available for opportunities
+        <span data-i18n="hero.badge">Available For Opportunities</span>
       </div>
-      <h1 class="hero-name reveal">Safruddin<br /><span class="accent">Setia Budi</span></h1>
-      <p class="hero-title reveal">Senior Quality Assurance Engineer</p>
-      <p class="hero-tagline reveal">
-        Crafting quality at enterprise scale — <span class="highlight">4+ years</span> ensuring flawless software releases.
+
+      <p class="hero-cmd reveal"><span class="c-dollar">$</span> Who am I<span class="cursor"></span></p>
+
+      <h1 class="hero-name reveal">Safruddin<br />Setia Budi</h1>
+      <p class="hero-title reveal" data-i18n="hero.title">Senior Quality Assurance Engineer</p>
+      <p class="hero-tagline reveal" data-i18n="hero.tagline">
+        Ensuring flawless software releases at enterprise scale — 5+ years turning requirements into reliable, well-tested products.
       </p>
+
+      <div class="hero-actions reveal">
+        <a href="#experience" class="btn btn-primary"><span data-i18n="hero.cta.work">view work</span> <span class="arr">→</span></a>
+        <a href="Safruddin_Setia_Budi_CV_QA_Engineer.pdf" download class="btn btn-outline"><span data-i18n="hero.cta.cv">download cv</span> <span class="arr">↓</span></a>
+        <a href="#contact" class="btn btn-ghost"><span data-i18n="hero.cta.contact">get in touch</span></a>
+      </div>
+
       <div class="hero-stats reveal">
         <div class="stat">
-          <span class="stat-num" data-target="4">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Years Exp.</span>
+          <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-i18n="stat.years">Years experience</span>
         </div>
-        <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num" data-target="30">0</span><span class="stat-suffix">%</span>
-          <span class="stat-label">Defect Reduction</span>
+          <span class="stat-label" data-i18n="stat.defect">Defect reduction</span>
         </div>
-        <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num" data-target="40">0</span><span class="stat-suffix">%</span>
-          <span class="stat-label">Faster Regression</span>
+          <span class="stat-label" data-i18n="stat.regression">Faster regression</span>
         </div>
-        <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-num" data-target="150">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Test Cases / Release</span>
-        </div>
-      </div>
-      <div class="hero-actions reveal">
-        <a href="#experience" class="btn btn-primary">View Experience</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
-      </div>
-    </div>
-    <div class="hero-visual reveal">
-      <div class="avatar-ring">
-        <div class="avatar-inner">
-          <div class="avatar-icon">🛡️</div>
-          <div class="avatar-orbit orbit-1"><span class="orbit-icon">🧪</span></div>
-          <div class="avatar-orbit orbit-2"><span class="orbit-icon">⚙️</span></div>
-          <div class="avatar-orbit orbit-3"><span class="orbit-icon">📊</span></div>
+          <span class="stat-label" data-i18n="stat.cases">Test cases / release</span>
         </div>
       </div>
     </div>
@@ -102,292 +88,264 @@
   <!-- About Section -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Who I Am</span>
-        <h2 class="section-title">Professional <span class="accent">Summary</span></h2>
-      </div>
+      <header class="section-header reveal">
+        <span class="section-idx">// 01</span>
+        <h2 class="section-title" data-i18n="about.title">Professional Summary</h2>
+      </header>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p class="lead-text">
-            Senior Quality Assurance Engineer with <strong>4+ years of experience</strong> in enterprise-level web and mobile application testing.
+          <p class="lead-text" data-i18n="about.lead">
+            Senior Quality Assurance Engineer with <strong>5+ years of experience</strong> in enterprise-level web and mobile application testing.
           </p>
-          <p>
-            Specialized in manual and automation testing using <strong>Playwright</strong>, API validation, performance testing, and database verification using <strong>MySQL</strong>. Proven track record in improving release stability, reducing production defects by up to <strong>30%</strong>, and accelerating regression cycles by approximately <strong>40%</strong> through automation initiatives.
+          <p data-i18n="about.p1">
+            Specialized in manual and automation testing using <strong>Playwright (TypeScript)</strong>, API validation, performance testing, and database verification using <strong>MySQL</strong>. Proven track record in improving release stability, reducing production defects by up to <strong>30%</strong>, and accelerating regression cycles by approximately <strong>40%</strong> through automation initiatives.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Strong leadership experience mentoring QA teams and acting as quality gatekeeper in corporate release environments.
           </p>
-          <div class="about-location">
-            <span class="location-icon">📍</span>
-            <span>Tangerang Selatan, Banten, Indonesia</span>
+          <div class="about-meta reveal">
+            <div class="meta-row"><span class="meta-key">Location</span><span class="meta-val">Tangerang Selatan, Banten, Indonesia</span></div>
+            <div class="meta-row"><span class="meta-key">Role</span><span class="meta-val">Senior QA Engineer @ ESB</span></div>
+            <div class="meta-row"><span class="meta-key">Focus</span><span class="meta-val" data-i18n="about.focus">Automation · API · Performance · Data</span></div>
           </div>
         </div>
         <div class="about-highlights reveal">
-          <div class="highlight-card">
-            <div class="highlight-icon">🎯</div>
-            <h4>Test Strategy</h4>
-            <p>End-to-end test planning from scope definition to release validation</p>
+          <div class="hl-card">
+            <span class="hl-num">30<span class="hl-unit">%</span></span>
+            <span class="hl-label" data-i18n="hl.defect">Defect reduction via regression coverage</span>
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🤖</div>
-            <h4>Automation</h4>
-            <p>Playwright-based automation frameworks reducing regression time by 40%</p>
+          <div class="hl-card">
+            <span class="hl-num">40<span class="hl-unit">%</span></span>
+            <span class="hl-label" data-i18n="hl.regression">Faster regression through automation</span>
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">👥</div>
-            <h4>Leadership</h4>
-            <p>Mentoring junior QA engineers and acting as quality gatekeeper</p>
+          <div class="hl-card">
+            <span class="hl-num">150<span class="hl-unit">+</span></span>
+            <span class="hl-label" data-i18n="hl.cases">Test cases designed per release</span>
           </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">📈</div>
-            <h4>Impact</h4>
-            <p>30% defect reduction through improved regression coverage</p>
+          <div class="hl-card">
+            <span class="hl-num">2</span>
+            <span class="hl-label" data-i18n="hl.mentored">Junior QA engineers mentored</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach Section (NEW — draft) -->
+  <section class="section section-alt" id="approach">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-idx">// 02</span>
+        <h2 class="section-title" data-i18n="approach.title">How I Work</h2>
+        <p class="section-sub reveal" data-i18n="approach.sub">A structured quality process across the Software Testing Life Cycle — from requirement to release.</p>
+      </header>
+      <div class="approach-grid">
+        <div class="approach-card reveal">
+          <span class="ap-step">01</span>
+          <h3 class="ap-title" data-i18n="approach.1.t">Analyze</h3>
+          <p class="ap-desc" data-i18n="approach.1.d">Requirement &amp; risk analysis from PRDs — defining scope, priorities, and acceptance criteria before a single test is written.</p>
+        </div>
+        <div class="approach-card reveal">
+          <span class="ap-step">02</span>
+          <h3 class="ap-title" data-i18n="approach.2.t">Design</h3>
+          <p class="ap-desc" data-i18n="approach.2.d">Test planning &amp; strategy — 150+ structured test cases per release covering functional, regression, smoke, and UAT scenarios.</p>
+        </div>
+        <div class="approach-card reveal">
+          <span class="ap-step">03</span>
+          <h3 class="ap-title" data-i18n="approach.3.t">Execute</h3>
+          <p class="ap-desc" data-i18n="approach.3.d">Manual + Playwright (TypeScript) automation with Page Object Model, plus API (Postman), performance (JMeter), and MySQL data validation.</p>
+        </div>
+        <div class="approach-card reveal">
+          <span class="ap-step">04</span>
+          <h3 class="ap-title" data-i18n="approach.4.t">Gatekeep</h3>
+          <p class="ap-desc" data-i18n="approach.4.d">Defect tracking in JIRA with clear repro steps, release validation, and acting as the final quality gate before production.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="section section-alt" id="skills">
+  <section class="section" id="skills">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What I Do</span>
-        <h2 class="section-title">Core <span class="accent">Competencies</span></h2>
-      </div>
+      <header class="section-header reveal">
+        <span class="section-idx">// 03</span>
+        <h2 class="section-title" data-i18n="skills.title">Core Competencies</h2>
+      </header>
 
       <div class="skills-grid reveal">
-        <div class="skill-card" data-delay="0">
-          <div class="skill-icon">📋</div>
-          <h4>Test Planning &amp; Strategy</h4>
-        </div>
-        <div class="skill-card" data-delay="50">
-          <div class="skill-icon">🔍</div>
-          <h4>Manual Testing</h4>
-          <p>Functional, Regression, Smoke, UAT</p>
-        </div>
-        <div class="skill-card" data-delay="100">
-          <div class="skill-icon">📱</div>
-          <h4>Web &amp; Mobile Testing</h4>
-        </div>
-        <div class="skill-card" data-delay="150">
-          <div class="skill-icon">🤖</div>
-          <h4>Automation Testing</h4>
-          <p>Playwright Framework</p>
-        </div>
-        <div class="skill-card" data-delay="200">
-          <div class="skill-icon">🔗</div>
-          <h4>API Testing</h4>
-          <p>Postman</p>
-        </div>
-        <div class="skill-card" data-delay="250">
-          <div class="skill-icon">⚡</div>
-          <h4>Performance Testing</h4>
-          <p>JMeter</p>
-        </div>
-        <div class="skill-card" data-delay="300">
-          <div class="skill-icon">🗄️</div>
-          <h4>Database Testing</h4>
-          <p>MySQL, MySQL Workbench</p>
-        </div>
-        <div class="skill-card" data-delay="350">
-          <div class="skill-icon">🐛</div>
-          <h4>Defect Management</h4>
-          <p>JIRA</p>
-        </div>
-        <div class="skill-card" data-delay="400">
-          <div class="skill-icon">🚀</div>
-          <h4>Release Validation</h4>
-        </div>
-        <div class="skill-card" data-delay="450">
-          <div class="skill-icon">🤝</div>
-          <h4>Cross-functional Collaboration</h4>
-        </div>
-        <div class="skill-card" data-delay="500">
-          <div class="skill-icon">🎯</div>
-          <h4>Risk Assessment</h4>
-        </div>
-        <div class="skill-card" data-delay="550">
-          <div class="skill-icon">📄</div>
-          <h4>Requirement Analysis</h4>
-        </div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.planning">Test Planning &amp; Strategy</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.manual">Manual Testing</span><span class="sk-tag">functional · regression · smoke · uat</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.webmobile">Web &amp; Mobile Testing</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.automation">Automation Testing</span><span class="sk-tag">playwright · typescript · pom</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.api">API Testing</span><span class="sk-tag">postman</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.perf">Performance Testing</span><span class="sk-tag">jmeter</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.db">Database Testing</span><span class="sk-tag">mysql · workbench</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.defect">Defect Management</span><span class="sk-tag">jira</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.release">Release Validation &amp; Gatekeeping</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.collab">Cross-functional Collaboration</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.risk">Risk Assessment</span></div>
+        <div class="skill-row"><span class="sk-bullet">▹</span><span class="sk-name" data-i18n="skill.req">Requirement Analysis</span></div>
       </div>
 
-      <!-- Tools -->
       <div class="tools-section reveal">
-        <h3 class="tools-title">Technical <span class="accent">Tools</span></h3>
+        <p class="tools-label"><span class="c-dollar">$</span> <span data-i18n="tools.label">stack --list</span></p>
         <div class="tools-list">
-          <div class="tool-badge">🎭 Playwright</div>
-          <div class="tool-badge">📮 Postman</div>
-          <div class="tool-badge">⚡ JMeter</div>
-          <div class="tool-badge">🗄️ MySQL</div>
-          <div class="tool-badge">🔧 MySQL Workbench</div>
-          <div class="tool-badge">🐛 JIRA</div>
-          <div class="tool-badge">🌿 Git</div>
+          <span class="tool-badge">Playwright</span>
+          <span class="tool-badge">TypeScript</span>
+          <span class="tool-badge">Postman</span>
+          <span class="tool-badge">JMeter</span>
+          <span class="tool-badge">MySQL</span>
+          <span class="tool-badge">MySQL Workbench</span>
+          <span class="tool-badge">JIRA</span>
+          <span class="tool-badge">Git</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Experience Section -->
-  <section class="section" id="experience">
+  <section class="section section-alt" id="experience">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Career Path</span>
-        <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
-      </div>
+      <header class="section-header reveal">
+        <span class="section-idx">// 04</span>
+        <h2 class="section-title" data-i18n="work.title">Professional Experience</h2>
+      </header>
 
       <div class="timeline">
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot active"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Senior Quality Assurance Engineer</h3>
-                <p class="timeline-company">PT Esensi Solusi Buana (ESB)</p>
-              </div>
-              <div class="timeline-period">
-                <span class="period-badge current">Jan 2025 – Present</span>
-              </div>
+        <article class="timeline-item reveal">
+          <div class="timeline-head">
+            <div>
+              <h3 class="tl-role" data-i18n="work.1.role">Senior Quality Assurance Engineer</h3>
+              <p class="tl-company">PT Esensi Solusi Buana (ESB)</p>
             </div>
-            <ul class="timeline-list">
-              <li>Led end-to-end test planning including scope definition, risk assessment, timeline estimation, and release validation</li>
-              <li>Reduced production defects by <strong>~30%</strong> through improved regression coverage and structured test case review</li>
-              <li>Developed and maintained end-to-end automation framework using <strong>Playwright</strong>, reducing regression testing time by <strong>~40%</strong></li>
-              <li>Conducted API and performance testing using <strong>Postman</strong> and <strong>JMeter</strong></li>
-              <li>Performed backend data validation using MySQL queries via MySQL Workbench</li>
-              <li>Mentored junior QA engineers in testing and automation best practices</li>
-              <li>Acted as quality gatekeeper during corporate release cycles</li>
-            </ul>
+            <span class="tl-period current">Jan 2025 — <span data-i18n="work.present">Present</span></span>
           </div>
-        </div>
+          <ul class="tl-list">
+            <li data-i18n="work.1.b1">Led end-to-end test planning including scope definition, risk assessment, timeline estimation, and release validation</li>
+            <li data-i18n="work.1.b2">Reduced production defects by <strong>~30%</strong> through improved regression coverage and structured test case review</li>
+            <li data-i18n="work.1.b3">Developed and maintained an end-to-end automation framework using <strong>Playwright (TypeScript)</strong> with a Page Object Model architecture and Git version control, reducing regression testing time by <strong>~40%</strong></li>
+            <li data-i18n="work.1.b4">Conducted API and performance testing using <strong>Postman</strong> and <strong>JMeter</strong> to ensure system scalability and reliability</li>
+            <li data-i18n="work.1.b5">Performed backend data validation using MySQL queries through MySQL Workbench to verify transaction integrity and data consistency</li>
+            <li data-i18n="work.1.b6">Mentored 2 junior QA engineers in test design, defect reporting standards, and automation best practices</li>
+            <li data-i18n="work.1.b7">Acted as quality gatekeeper during corporate release cycles, ensuring stable deployment to production</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Quality Assurance Engineer</h3>
-                <p class="timeline-company">PT Esensi Solusi Buana (ESB)</p>
-              </div>
-              <div class="timeline-period">
-                <span class="period-badge">Jan 2022 – Jan 2025</span>
-              </div>
+        <article class="timeline-item reveal">
+          <div class="timeline-head">
+            <div>
+              <h3 class="tl-role" data-i18n="work.2.role">Quality Assurance Engineer</h3>
+              <p class="tl-company">PT Esensi Solusi Buana (ESB)</p>
             </div>
-            <ul class="timeline-list">
-              <li>Designed and executed <strong>150+ test cases</strong> per release cycle based on PRD</li>
-              <li>Performed manual testing (functional, regression, smoke) for web &amp; mobile apps</li>
-              <li>Validated backend data using MySQL queries</li>
-              <li>Identified and tracked defects using <strong>JIRA</strong></li>
-              <li>Conducted API testing using <strong>Postman</strong></li>
-              <li>Supported User Acceptance Testing (UAT)</li>
-              <li>Collaborated with developers and product owners</li>
-            </ul>
+            <span class="tl-period">Jan 2022 — Jan 2025</span>
           </div>
-        </div>
+          <ul class="tl-list">
+            <li data-i18n="work.2.b1">Designed and executed <strong>150+ test cases</strong> per release cycle based on Product Requirement Documents (PRD)</li>
+            <li data-i18n="work.2.b2">Performed manual testing for web and mobile applications including functional, regression, and smoke testing</li>
+            <li data-i18n="work.2.b3">Validated backend database records using MySQL queries via MySQL Workbench to ensure consistency between UI and database data</li>
+            <li data-i18n="work.2.b4">Identified and tracked defects using <strong>JIRA</strong>, ensuring clear reproduction steps and impact analysis</li>
+            <li data-i18n="work.2.b5">Conducted API testing using <strong>Postman</strong> and supported User Acceptance Testing (UAT) activities</li>
+            <li data-i18n="work.2.b6">Collaborated with developers and product owners to validate bug fixes and improve feature quality</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Software Tester</h3>
-                <p class="timeline-company">Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah</p>
-              </div>
-              <div class="timeline-period">
-                <span class="period-badge">Nov 2021 – Dec 2021</span>
-              </div>
+        <article class="timeline-item reveal">
+          <div class="timeline-head">
+            <div>
+              <h3 class="tl-role" data-i18n="work.3.role">Software Tester</h3>
+              <p class="tl-company">Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah</p>
             </div>
-            <ul class="timeline-list">
-              <li>Executed end-to-end system simulation testing on <strong>SPSE v4.5</strong></li>
-              <li>Validated system functionality using UAT checklist</li>
-              <li>Reported defects with clear reproduction steps</li>
-              <li>Provided feature improvement recommendations</li>
-            </ul>
+            <span class="tl-period">Nov 2021 — Dec 2021</span>
           </div>
-        </div>
+          <ul class="tl-list">
+            <li data-i18n="work.3.b1">Executed end-to-end system simulation testing on the <strong>SPSE v4.5</strong> application, from package creation to completion</li>
+            <li data-i18n="work.3.b2">Validated system functionality using structured UAT checklists aligned with business requirements</li>
+            <li data-i18n="work.3.b3">Reported defects with detailed reproduction steps and supporting evidence</li>
+            <li data-i18n="work.3.b4">Provided feature enhancement recommendations based on testing findings</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">IT Support Technician</h3>
-                <p class="timeline-company">Badan Riset dan Inovasi Nasional RI (BRIN RI)</p>
-              </div>
-              <div class="timeline-period">
-                <span class="period-badge">Dec 2016 – Feb 2017</span>
-              </div>
+        <article class="timeline-item reveal">
+          <div class="timeline-head">
+            <div>
+              <h3 class="tl-role" data-i18n="work.4.role">IT Support Technician</h3>
+              <p class="tl-company">Badan Riset dan Inovasi Nasional RI (BRIN RI)</p>
             </div>
-            <ul class="timeline-list">
-              <li>Provided support for Microsoft Office and local network setup</li>
-              <li>Performed OS installation, configuration, backup &amp; restore</li>
-              <li>Handled hardware, software, and network troubleshooting</li>
-            </ul>
+            <span class="tl-period">Dec 2016 — Feb 2017</span>
           </div>
-        </div>
+          <ul class="tl-list">
+            <li data-i18n="work.4.b1">Supported users with Microsoft Office applications and local network setup</li>
+            <li data-i18n="work.4.b2">Performed OS installation, configuration, and data backup/restore procedures</li>
+            <li data-i18n="work.4.b3">Provided IT support for hardware, software, and network issues in office environments</li>
+          </ul>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section class="section section-alt" id="education">
+  <!-- Certifications Section (NEW) -->
+  <section class="section" id="certifications">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Academic Background</span>
-        <h2 class="section-title"><span class="accent">Education</span></h2>
+      <header class="section-header reveal">
+        <span class="section-idx">// 05</span>
+        <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
+      </header>
+      <div class="cert-card reveal">
+        <div class="cert-head">
+          <h3 class="cert-name">Digital Talent Academy</h3>
+          <span class="cert-year">2026</span>
+        </div>
+        <p class="cert-issuer" data-i18n="certs.issuer">Digital Talent Scholarship (Kominfo)</p>
+        <ul class="cert-list">
+          <li>Implementasi Pengujian Perangkat Lunak dan API dengan Pendekatan Manual dan Otomatis</li>
+          <li>Otomatisasi API &amp; Pengujian Otomatis dengan Selenium dan Appium</li>
+          <li>Dasar-dasar Quality Assurance dan Pengujian dalam Software Testing Life Cycle (STLC)</li>
+        </ul>
       </div>
-      <div class="edu-card reveal">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-content">
-          <h3 class="edu-degree">Bachelor of Computer Technology</h3>
-          <p class="edu-school">Universitas Islam Syekh Yusuf Tangerang</p>
-          <p class="edu-year">January 2017 – January 2021 · Tangerang, Indonesia</p>
+
+      <!-- Education -->
+      <div class="edu-block reveal">
+        <span class="section-idx small">// Education</span>
+        <div class="edu-card">
+          <div class="edu-content">
+            <h3 class="edu-degree" data-i18n="edu.degree">Bachelor of Computer Technology</h3>
+            <p class="edu-school">Universitas Islam Syekh Yusuf Tangerang</p>
+            <p class="edu-year">Jan 2017 — Jan 2021 · Tangerang, Indonesia</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="section" id="contact">
+  <section class="section section-alt" id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Let's Connect</span>
-        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
-      </div>
+      <header class="section-header reveal">
+        <span class="section-idx">// 06</span>
+        <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+        <p class="section-sub reveal" data-i18n="contact.sub">Open to QA engineering opportunities. Let's talk quality.</p>
+      </header>
       <div class="contact-grid reveal">
-        <a href="mailto:safruddinsb88@gmail.com" class="contact-card" id="contactEmail">
-          <div class="contact-icon">📧</div>
-          <div class="contact-info">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">safruddinsb88@gmail.com</span>
-          </div>
-          <span class="contact-arrow">→</span>
+        <a href="mailto:safruddinsb88@gmail.com" class="contact-card">
+          <span class="cc-key">email</span>
+          <span class="cc-val">safruddinsb88@gmail.com</span>
+          <span class="cc-arrow">→</span>
         </a>
-        <a href="https://wa.me/6283806992528" target="_blank" rel="noopener" class="contact-card" id="contactPhone">
-          <div class="contact-icon">📱</div>
-          <div class="contact-info">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">+62 838 0699 2528</span>
-          </div>
-          <span class="contact-arrow">→</span>
+        <a href="https://wa.me/6283806992528" target="_blank" rel="noopener" class="contact-card">
+          <span class="cc-key">phone / whatsapp</span>
+          <span class="cc-val">+62 838 0699 2528</span>
+          <span class="cc-arrow">→</span>
         </a>
-        <a href="https://linkedin.com/in/safruddin-setia-budi" target="_blank" rel="noopener" class="contact-card" id="contactLinkedIn">
-          <div class="contact-icon">🔗</div>
-          <div class="contact-info">
-            <span class="contact-label">LinkedIn</span>
-            <span class="contact-value">safruddin-setia-budi</span>
-          </div>
-          <span class="contact-arrow">→</span>
+        <a href="https://linkedin.com/in/safruddin-setia-budi" target="_blank" rel="noopener" class="contact-card">
+          <span class="cc-key">linkedin</span>
+          <span class="cc-val">safruddin-setia-budi</span>
+          <span class="cc-arrow">→</span>
         </a>
-        <div class="contact-card static" id="contactLocation">
-          <div class="contact-icon">📍</div>
-          <div class="contact-info">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Tangerang Selatan, Banten, Indonesia</span>
-          </div>
+        <div class="contact-card static">
+          <span class="cc-key">location</span>
+          <span class="cc-val">Tangerang Selatan, Banten, ID</span>
         </div>
       </div>
     </div>
@@ -395,9 +353,9 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p class="footer-text">© 2025 Safruddin Setia Budi · Senior Quality Assurance Engineer</p>
-      <p class="footer-subtext">Built with passion for quality 🛡️</p>
+    <div class="container footer-inner">
+      <p class="footer-text">© 2026 Safruddin Setia Budi</p>
+      <p class="footer-sub"><span class="c-dollar">$</span> <span data-i18n="footer.tag">exit 0 // built for quality</span><span class="cursor"></span></p>
     </div>
   </footer>
 
